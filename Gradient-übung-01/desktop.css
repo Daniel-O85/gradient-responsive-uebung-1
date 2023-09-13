@@ -1,0 +1,49 @@
+@media screen and (min-width: 600px) {
+
+    /****** Hintergrundfarbe Linearer Farbverlauf
+            ohne wiederholung auf der ganzen Seite *****/
+    body {
+        background-image: linear-gradient(45deg,
+                lightblue,
+                lightgreen,
+                lightyellow,
+                lightcoral);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /****** Hauptinhalt in 3 Spalten *****/
+    main {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    /**** Hier wird auf 3 Zeilen gestreckt ****/
+    main .linear-big {
+        grid-row-end: span 3;
+        background-color: aliceblue;
+        height: 900px;
+    }
+
+    main .conic-small {
+        height: 300px;
+    }
+
+    main .radial {
+        height: 300px;
+    }
+
+    /***** Hier startet der Inhalt in Spalte 2und 
+       wird auf 2 Spalten gestreckt *****/
+    main .conic-big {
+        height: 300px;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+    /***** Hier startet der Inhalt in Spalte 3 *****/
+    main .linear-small {
+        height: 300px;
+        grid-column-start: 3;
+    }
+}

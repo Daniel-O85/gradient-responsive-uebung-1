@@ -1,0 +1,33 @@
+@media screen and (max-width: 599px) {
+
+    /****** Hintergrundfarbe Linearer Farbverlauf
+            ohne wiederholung auf der ganzen Seite *****/
+    body {
+        background-image: linear-gradient(130deg,
+                lightblue,
+                lightgreen,
+                lightyellow,
+                lightcoral);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /****** Inhalt vom Header wird flexibel und bekommt Raum dazwischen ******/
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /******* Höhe und Breite für den Inhalt vom Main **********/
+    main .linear-big,
+    main .conic-small,
+    main .radial,
+    main .conic-big,
+    main .linear-small {
+        height: 150px;
+        width: 150px;
+    }
+
+
+}

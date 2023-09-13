@@ -1,0 +1,89 @@
+/******* Style für alle DIV *******/
+div {
+    border: solid black 1px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+/****** Inhalt vom Header wird flexibel und mittig zentriert ******/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/****** Höhe und Breite vom Inhalt des Header ******/
+header div {
+    margin: 20px;
+    height: 80px;
+    width: 140px;
+}
+/******* Erster Header DIV = Runder Farbverlauf  *******/
+header .circle {
+    background-image: radial-gradient(circle, yellowgreen, orangered);
+    border-radius: 100%;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+/******* Zweiter Header DIV = Ovaler Farbverlauf  *******/
+header .ellipse {
+    background-image: radial-gradient(ellipse, orangered, yellowgreen);
+    border-radius: 100%;
+    width: 150px;
+
+}
+/******* Dritter Header DIV = Kegelförmiger Farbverlauf  *******/
+header .conic {
+    background-image: conic-gradient(red, yellow, green, blue, violet);
+}
+/******* Erster Main DIV = Linearer Farbverlauf von Unten nach Oben *******/
+
+main .linear-big {
+    background-image: linear-gradient(to top, blue, aqua, lightskyblue, aliceblue);
+}
+/******* Zweiter Main DIV = Kegelförmiger Farbverlauf  *******/
+
+main .conic-small {
+    background-image: conic-gradient(yellow, coral, purple, violet);
+}
+/******* Dritter Main DIV = Runder Farbverlauf *******/
+
+main .radial {
+    background-image: radial-gradient(skyblue 20%, lightgreen 40%, mediumseagreen 60%);
+}
+/******* Vierter Main DIV = Kegelförmiger Farbverlauf  *******/
+
+main .conic-big {
+    background-image: conic-gradient(red, orangered, orange, gold, khaki);
+}
+/******* Fünfter Main DIV = Linearer Farbverlauf von Links nach Rechts *******/
+
+main .linear-small {
+    background-image: linear-gradient(to right, lightgoldenrodyellow, lightgreen, lightsteelblue, lightpink);
+}
+/******* Fußzeile Inhalt flexibel und Freiraum um die Elemente ********/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/***** Höhe und Breite für den Inhalt des Footer ******/
+footer div {
+    height: 80px;
+    width: 150px;
+}
+/****** Linearer Farbverlauf von Links nach Rechts *****/
+footer .linear-left {
+    background-image: linear-gradient(to right, red, green, blue);
+}
+/****** Linearer Farbverlauf *****/
+
+footer .linear-center {
+    background-image: linear-gradient(red, green, blue);
+}
+/****** Linearer Farbverlauf von Rechts nach Links *****/
+
+footer .linear-right {
+    background-image: linear-gradient(to left, red, green, blue);
+}
